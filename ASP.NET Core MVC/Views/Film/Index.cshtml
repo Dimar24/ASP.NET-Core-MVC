@@ -1,0 +1,22 @@
+﻿@model IEnumerable<ASP.NET_Core_MVC.Models.Film>
+@{
+    ViewData["Title"] = "Films Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Films</h1>
+    <table class="tabble">
+        <tr>
+            <td>ID</td>
+            <td>Title</td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayTextFor(modelItem => item.Id)</td>
+                <td>@Html.DisplayTextFor(modelItem => item.Title)</td>
+            </tr>
+        }
+
+    </table>
+</div>

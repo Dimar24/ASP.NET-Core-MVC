@@ -19,13 +19,26 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Конфиденциальность</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Film" asp-action="Index">Фильмы</a>
                         </li>
                     </ul>
                 </div>
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <a class="nav-link text-dark enter-btn" asp-area="" asp-controller="Account" asp-action="Login">Вход</a>
+                }
+                else
+                {
+                    <a class="nav-link text-dark enter-btn" asp-area="" asp-controller="Account" asp-action="Login">Выход</a>
+                }
+
+
             </div>
         </nav>
     </header>
@@ -37,12 +50,12 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - ASP.NET_Core_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2020 - Рустамчик корпарейтет БигКомпани - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script><!--подключение jquery-->
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+    @RenderSection("Scripts", required: false)      <!--подключение скриптов валидации после jquery-->
 </body>
 </html>

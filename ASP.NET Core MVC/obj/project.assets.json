@@ -4891,11 +4891,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dimam\\source\\repos\\ASP.NET Core MVC\\ASP.NET Core MVC\\ASP.NET Core MVC.csproj",
+      "projectUniqueName": "D:\\andersen\\ASP.NET Core MVC\\ASP.NET Core MVC\\ASP.NET Core MVC.csproj",
       "projectName": "ASP.NET Core MVC",
-      "projectPath": "C:\\Users\\dimam\\source\\repos\\ASP.NET Core MVC\\ASP.NET Core MVC\\ASP.NET Core MVC.csproj",
+      "projectPath": "D:\\andersen\\ASP.NET Core MVC\\ASP.NET Core MVC\\ASP.NET Core MVC.csproj",
       "packagesPath": "C:\\Users\\dimam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dimam\\source\\repos\\ASP.NET Core MVC\\ASP.NET Core MVC\\obj\\",
+      "outputPath": "D:\\andersen\\ASP.NET Core MVC\\ASP.NET Core MVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
