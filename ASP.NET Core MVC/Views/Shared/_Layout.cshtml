@@ -30,7 +30,6 @@
                     </ul>
                 </div>
                 @if (!User.Identity.IsAuthenticated)
-                {
                     <a class="nav-link text-dark enter-btn" asp-area="" asp-controller="Account" asp-action="Login">Вход</a>
                 }
                 else
