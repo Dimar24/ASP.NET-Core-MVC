@@ -26,7 +26,13 @@ namespace ASP.NET_Core_MVC.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            return View();
+            if (!User.Identity.IsAuthenticated)
+            {
+                
+                return View();
+            }
+            return RedirectToAction("Index", "Home");
+
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -48,7 +54,11 @@ namespace ASP.NET_Core_MVC.Controllers
         [HttpGet]
         public IActionResult Register()
         {
-            return View();
+            if (!User.Identity.IsAuthenticated)
+            {
+                return View();
+            }
+            return RedirectToAction("Index", "Home");
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -89,7 +99,7 @@ namespace ASP.NET_Core_MVC.Controllers
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Login", "Account");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

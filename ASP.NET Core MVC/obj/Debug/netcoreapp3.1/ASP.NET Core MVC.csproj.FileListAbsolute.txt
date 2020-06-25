@@ -102,8 +102,6 @@ D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\staticweba
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\ASP.NET Core MVC.dll
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\ASP.NET Core MVC.pdb
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\ASP.NET Core MVC.genruntimeconfig.cache
-D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\ASP.NET Core MVC.csproj.CoreCompileInputs.cache
-D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\ASP.NET Core MVC.MvcApplicationPartsAssemblyInfo.cache
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -139,3 +137,9 @@ D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\runtimes\w
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\Razor\Views\Film\Index.cshtml.g.cs
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\ASP.NET Core MVC.csproj.CoreCompileInputs.cache
+D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\ASP.NET Core MVC.MvcApplicationPartsAssemblyInfo.cache
+D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\bundleconfig.json
+D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\dotnet-bundle.dll
+D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\NUglify.dll

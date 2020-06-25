@@ -1,22 +1,53 @@
 ﻿@model IEnumerable<ASP.NET_Core_MVC.Models.Film>
 @{
-    ViewData["Title"] = "Films Page";
+    ViewData["Title"] = "Фильмы";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Films</h1>
+    <h1 class="display-4">Фильмы</h1>
     <table class="tabble">
         <tr>
             <td>ID</td>
             <td>Title</td>
+            <td>Year</td>
+            <td>Time</td>
+            <td>Age</td>
+            <td>Rating</td>
+            <td>Trailer</td>
         </tr>
         @foreach (var item in Model)
         {
             <tr>
                 <td>@Html.DisplayTextFor(modelItem => item.Id)</td>
                 <td>@Html.DisplayTextFor(modelItem => item.Title)</td>
+                <td>@Html.DisplayTextFor(modelItem => item.Year)</td>
+                <td>@Html.DisplayTextFor(modelItem => item.Time)</td>
+                <td>@Html.DisplayTextFor(modelItem => item.Age)</td>
+                <td>@Html.DisplayTextFor(modelItem => item.Rating)</td>
+                <td>@Html.DisplayTextFor(modelItem => item.Trailer)</td>
             </tr>
         }
 
     </table>
+    @*
+    @foreach (var item in Model)
+    {
+        <div class="scene">
+            <div class="card-film">
+                <div class="card__face card__face--front">
+                    @Html.DisplayTextFor(modelItem => item.Title)
+                    @Html.DisplayTextFor(modelItem => item.Year)
+                    @Html.DisplayTextFor(modelItem => item.Time)
+                    @Html.DisplayTextFor(modelItem => item.Age)
+                    @Html.DisplayTextFor(modelItem => item.Rating)
+                </div>
+                <div class="card__face card__face--back">
+                    <iframe width="560" height="315" src="@Html.DisplayTextFor(modelItem => item.Trailer)" frameborder="0" allow="" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        
+    }
+      *@  
+  
 </div>

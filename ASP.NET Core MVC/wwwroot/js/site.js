@@ -6,7 +6,7 @@
     if (true) {
         $('.enter-btn').hide();
     }
-});
+});*/
 
 //(function () {
 //    window.addEventListener('load', function () {

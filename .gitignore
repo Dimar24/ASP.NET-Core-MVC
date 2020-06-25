@@ -1,0 +1,8 @@
+﻿# IDEs
+.vs
+.vscode
+# Artifacts
+/build
+# User specific 
+**/*.user
+**/*-overrides.json

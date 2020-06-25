@@ -4,28 +4,33 @@
     ViewData["Title"] = "Страница регистрации";
 }
 
-<h2>Регистрация</h2>
+<link rel="stylesheet" href="~/css/site.css" />
 
 <form asp-action="Register" asp-controller="Account" asp-anti-forgery="true">
     <div class="validation" asp-validation-summary="ModelOnly" />
-    <div>
-        <div>
-            <label asp-for="Name">Введите Login</label><br />
-            <input type="text" asp-for="Name" />
-            <span asp-validation-for="Name" />
+    <div class="card">
+        <div class="card-header text-center">
+            <h2>Регистрация</h2>
         </div>
-        <div>
-            <label asp-for="Password">Введите пароль</label><br />
-            <input asp-for="Password" />
-            <span asp-validation-for="Password" />
-        </div>
-        <div>
-            <label asp-for="ConfirmPassword">Повторите пароль</label><br />
-            <input asp-for="ConfirmPassword" />
-            <span asp-validation-for="ConfirmPassword" />
-        </div>
-        <div>
-            <input type="submit" value="Регистрация" />
+        <div class="container pt-3">
+            <div class="form-group">
+                <label asp-for="Name">Введите Login</label><br />
+                <input class="log-reg-input-field" type="text" asp-for="Name" />
+                <span asp-validation-for="Name" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Введите пароль</label><br />
+                <input class="log-reg-input-field" asp-for="Password" />
+                <span asp-validation-for="Password" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword">Повторите пароль</label><br />
+                <input class="log-reg-input-field" asp-for="ConfirmPassword" />
+                <span asp-validation-for="ConfirmPassword" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Регистрация" class="btn btn-success" />
+            </div>
         </div>
     </div>
 </form>
