@@ -24,8 +24,8 @@
     ".NETCoreApp,Version=v3.1": {
       "ASP.NET Core MVC/1.0.0": {
         "dependencies": {
-          "BuildBundlerMinifier": "3.2.447",
-          "BundlerMinifier.Core": "3.2.447",
+          "BuildBundlerMinifier": "3.2.449",
+          "BundlerMinifier.Core": "3.2.449",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -304,16 +304,16 @@
           "ASP.NET Core MVC.dll": {}
         }
       },
-      "BuildBundlerMinifier/3.2.447": {},
-      "BundlerMinifier.Core/3.2.447": {
+      "BuildBundlerMinifier/3.2.449": {},
+      "BundlerMinifier.Core/3.2.449": {
         "dependencies": {
           "NUglify": "1.5.14",
           "Newtonsoft.Json": "9.0.1"
         },
         "runtime": {
           "lib/netcoreapp3.1/dotnet-bundle.dll": {
-            "assemblyVersion": "3.2.447.0",
-            "fileVersion": "3.2.447.0"
+            "assemblyVersion": "3.2.449.0",
+            "fileVersion": "3.2.449.0"
           }
         },
         "compile": {
@@ -2929,19 +2929,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "BuildBundlerMinifier/3.2.447": {
+    "BuildBundlerMinifier/3.2.449": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LGsN+WoO/XEaxBFfjsOs6S50k0b0Sqp6tt0AQWoAOU0JzKBQOPIJwXBeZ0c5KRBQPoL5AhFcSpMhAemRQ2AuLw==",
-      "path": "buildbundlerminifier/3.2.447",
-      "hashPath": "buildbundlerminifier.3.2.447.nupkg.sha512"
+      "sha512": "sha512-uA9sYDy4VepL3xwzBTLcP2LyuVYMt0ZIT3gaSiXvGoX15Ob+rOP+hGydhevlSVd+rFo+Y+VQFEHDuWU8HBW+XA==",
+      "path": "buildbundlerminifier/3.2.449",
+      "hashPath": "buildbundlerminifier.3.2.449.nupkg.sha512"
     },
-    "BundlerMinifier.Core/3.2.447": {
+    "BundlerMinifier.Core/3.2.449": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NmzUrpQNdZXPeupFfAIn4JyFemBdSE2dJxyF7eTvxVmRbe8tsXXc6+6WkRPkEegSfR2GcY1ON/SIK5LIPYPVYQ==",
-      "path": "bundlerminifier.core/3.2.447",
-      "hashPath": "bundlerminifier.core.3.2.447.nupkg.sha512"
+      "sha512": "sha512-8ssF9o8PavO/YUh1rA/xz2qmNfm7FjC3UxkP7C8BMo2fvSodpWpeUB6/0ISRgq4U3T6+i7+WuAqlSLWHo3n/2w==",
+      "path": "bundlerminifier.core/3.2.449",
+      "hashPath": "bundlerminifier.core.3.2.449.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",

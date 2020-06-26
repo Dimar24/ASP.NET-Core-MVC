@@ -10,7 +10,8 @@ using Microsoft.Extensions.Logging;
 
 namespace ASP.NET_Core_MVC.Controllers
 {
-
+    [Authorize]
+    [Route("films")]
     public class FilmController : Controller
     {
         private ApplicationContext db;
@@ -22,12 +23,20 @@ namespace ASP.NET_Core_MVC.Controllers
             db = context;
         }
 
-        [Route("films")]
+        
         [Authorize]
         public async Task<IActionResult> Index()
         {
             var films = await db.Films.ToListAsync();
             return View(films);
+        }
+
+        [Route("{globalId:int}/info")]
+        public async Task<IActionResult> Info(int globalId)
+        {
+            var film = await db.Films.FirstOrDefaultAsync(u => u.Id == globalId);
+            //var film;
+            return View(film);
         }
     }
 }

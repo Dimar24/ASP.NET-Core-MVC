@@ -1,0 +1,16 @@
+﻿@model ASP.NET_Core_MVC.Models.Film
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+    <div class="text-center">
+        <h1 class="display-4">@Model.Title</h1>
+        <iframe width="560" height="400px" src="@Model.Trailer.Replace("watch?v=", "embed/");" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1 class="display-4 mt-4">Информация</h1>
+
+            <h3 class="mt-4">Год выпуска: @Model.Year</h3>
+            <h3 class="mt-4">Время продолжительности: @Model.Time</h3>
+            <h3 class="mt-4">Возростной рейтинг: @Model.Age</h3>
+            <h3 class="mt-4">Рейтинг фильма: @Model.Rating</h3>
+
+    </div>

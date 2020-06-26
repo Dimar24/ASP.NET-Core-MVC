@@ -43,11 +43,11 @@
           "dependencies": {
             "BuildBundlerMinifier": {
               "target": "Package",
-              "version": "[3.2.447, )"
+              "version": "[3.2.449, )"
             },
             "BundlerMinifier.Core": {
               "target": "Package",
-              "version": "[3.2.447, )"
+              "version": "[3.2.449, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

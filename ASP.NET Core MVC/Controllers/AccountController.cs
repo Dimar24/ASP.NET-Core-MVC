@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using ASP.NET_Core_MVC.Models;
+using ASP.NET_Core_MVC.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -47,7 +48,7 @@ namespace ASP.NET_Core_MVC.Controllers
 
                     return RedirectToAction("Index", "Home");
                 }
-                ModelState.AddModelError("", "Некорректные логин и(или) пароль");
+                ModelState.AddModelError(string.Empty, "Некорректные логин и(или) пароль");
             }
             return View(model);
         }
@@ -78,7 +79,7 @@ namespace ASP.NET_Core_MVC.Controllers
                     return RedirectToAction("Index", "Home");
                 }
                 else
-                    ModelState.AddModelError("", "Некорректные логин и(или) пароль");
+                    ModelState.AddModelError(string.Empty, "Некорректные логин и(или) пароль");
             }
             return View(model);
         }

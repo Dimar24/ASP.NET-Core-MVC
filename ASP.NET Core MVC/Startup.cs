@@ -32,12 +32,12 @@ namespace ASP.NET_Core_MVC
 
             // установка конфигурации подключения
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(options => //CookieAuthenticationOptions
+                .AddCookie(options =>
                 {
                     options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
                 });
 
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(options => options.MaxModelValidationErrors = 50);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,14 +66,6 @@ namespace ASP.NET_Core_MVC
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-                /*endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Film}/{action=Index}/{id?}");*/
-                /*
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Account}/{action=Login}/{id?}");*/
             });
         }
     }

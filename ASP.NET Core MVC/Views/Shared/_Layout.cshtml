@@ -6,7 +6,6 @@
     <title>@ViewData["Title"] - ASP.NET_Core_MVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.min.css" />
-    <script src="~/js/site.min.js"></script>
 </head>
 <body>
     <header>
@@ -31,15 +30,15 @@
                     </ul>
                 </div>
                 @*@if (!User.Identity.IsAuthenticated)
-                {
-                    <a class="nav-link text-dark enter-btn" asp-area="" asp-controller="Account" asp-action="Login">Вход</a>
-                }
-                else
-                {
-                    <a class="nav-link text-dark enter-btn" asp-area="" asp-controller="Account" asp-action="Logout">Выход</a>
-                }*@
-            @{ var isAuth = User.Identity.IsAuthenticated; }
-            <a class="nav-link text-dark enter-btn" asp-area="" asp-controller="Account" asp-action="@(isAuth ? "Logout" : "Login")">@(isAuth ? "Выход" : "Вход")</a>
+                    {
+                        <a class="nav-link text-dark enter-btn" asp-area="" asp-controller="Account" asp-action="Login">Вход</a>
+                    }
+                    else
+                    {
+                        <a class="nav-link text-dark enter-btn" asp-area="" asp-controller="Account" asp-action="Logout">Выход</a>
+                    }*@
+                @{ var isAuth = User.Identity.IsAuthenticated; }
+                <a class="nav-link text-dark enter-btn" asp-area="" asp-controller="Account" asp-action="@(isAuth ? "Logout" : "Login")">@(isAuth ? "Выход" : "Вход")</a>
 
             </div>
         </nav>
@@ -57,7 +56,9 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script><!--подключение jquery-->
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/site.min.js"></script>
     @RenderSection("Scripts", required: false)      <!--подключение скриптов валидации после jquery-->
 </body>
 </html>

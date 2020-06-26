@@ -2,13 +2,13 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "BuildBundlerMinifier/3.2.447": {
+      "BuildBundlerMinifier/3.2.449": {
         "type": "package",
         "build": {
           "build/BuildBundlerMinifier.targets": {}
         }
       },
-      "BundlerMinifier.Core/3.2.447": {
+      "BundlerMinifier.Core/3.2.449": {
         "type": "package",
         "dependencies": {
           "NUglify": "1.5.14",
@@ -1387,16 +1387,16 @@
     }
   },
   "libraries": {
-    "BuildBundlerMinifier/3.2.447": {
-      "sha512": "LGsN+WoO/XEaxBFfjsOs6S50k0b0Sqp6tt0AQWoAOU0JzKBQOPIJwXBeZ0c5KRBQPoL5AhFcSpMhAemRQ2AuLw==",
+    "BuildBundlerMinifier/3.2.449": {
+      "sha512": "uA9sYDy4VepL3xwzBTLcP2LyuVYMt0ZIT3gaSiXvGoX15Ob+rOP+hGydhevlSVd+rFo+Y+VQFEHDuWU8HBW+XA==",
       "type": "package",
-      "path": "buildbundlerminifier/3.2.447",
+      "path": "buildbundlerminifier/3.2.449",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/BuildBundlerMinifier.targets",
-        "buildbundlerminifier.3.2.447.nupkg.sha512",
+        "buildbundlerminifier.3.2.449.nupkg.sha512",
         "buildbundlerminifier.nuspec",
         "tools/net46/BundlerMinifier.dll",
         "tools/net46/NUglify.dll",
@@ -1415,14 +1415,14 @@
         "tools/netstandard1.3/Newtonsoft.Json.dll"
       ]
     },
-    "BundlerMinifier.Core/3.2.447": {
-      "sha512": "NmzUrpQNdZXPeupFfAIn4JyFemBdSE2dJxyF7eTvxVmRbe8tsXXc6+6WkRPkEegSfR2GcY1ON/SIK5LIPYPVYQ==",
+    "BundlerMinifier.Core/3.2.449": {
+      "sha512": "8ssF9o8PavO/YUh1rA/xz2qmNfm7FjC3UxkP7C8BMo2fvSodpWpeUB6/0ISRgq4U3T6+i7+WuAqlSLWHo3n/2w==",
       "type": "package",
-      "path": "bundlerminifier.core/3.2.447",
+      "path": "bundlerminifier.core/3.2.449",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "bundlerminifier.core.3.2.447.nupkg.sha512",
+        "bundlerminifier.core.3.2.449.nupkg.sha512",
         "bundlerminifier.core.nuspec",
         "lib/net452/dotnet-bundle.exe",
         "lib/netcoreapp1.0/dotnet-bundle.dll",
@@ -5329,8 +5329,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "BuildBundlerMinifier >= 3.2.447",
-      "BundlerMinifier.Core >= 3.2.447",
+      "BuildBundlerMinifier >= 3.2.449",
+      "BundlerMinifier.Core >= 3.2.449",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.5"
     ]
   },
@@ -5377,11 +5377,11 @@
         "dependencies": {
           "BuildBundlerMinifier": {
             "target": "Package",
-            "version": "[3.2.447, )"
+            "version": "[3.2.449, )"
           },
           "BundlerMinifier.Core": {
             "target": "Package",
-            "version": "[3.2.447, )"
+            "version": "[3.2.449, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",

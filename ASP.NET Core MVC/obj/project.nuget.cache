@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ncH78Y5sLnQhki+y8TeDiVxpOoLVao7ldk3HWUNU/jFBKf4pWiS8lSmcVbZ3MdfxXin1kq2Oz/HmmlB5Csw6kA==",
+  "dgSpecHash": "+lzJ3Ql22mckyATyZXYBZ+EkG1eoPaaq9DMIN5vvKwVfIOgUkse5wzbUZWFlaEvmPPRhkTf49de82BcONR8uvQ==",
   "success": true,
   "projectFilePath": "D:\\andersen\\ASP.NET Core MVC\\ASP.NET Core MVC\\ASP.NET Core MVC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dimam\\.nuget\\packages\\buildbundlerminifier\\3.2.447\\buildbundlerminifier.3.2.447.nupkg.sha512",
-    "C:\\Users\\dimam\\.nuget\\packages\\bundlerminifier.core\\3.2.447\\bundlerminifier.core.3.2.447.nupkg.sha512",
+    "C:\\Users\\dimam\\.nuget\\packages\\buildbundlerminifier\\3.2.449\\buildbundlerminifier.3.2.449.nupkg.sha512",
+    "C:\\Users\\dimam\\.nuget\\packages\\bundlerminifier.core\\3.2.449\\bundlerminifier.core.3.2.449.nupkg.sha512",
     "C:\\Users\\dimam\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\dimam\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

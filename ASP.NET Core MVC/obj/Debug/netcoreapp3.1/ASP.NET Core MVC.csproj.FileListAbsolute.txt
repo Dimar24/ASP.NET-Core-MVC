@@ -143,3 +143,4 @@ D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\bundleconf
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\dotnet-bundle.dll
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\bin\Debug\netcoreapp3.1\NUglify.dll
+D:\andersen\ASP.NET Core MVC\ASP.NET Core MVC\obj\Debug\netcoreapp3.1\Razor\Views\Film\Info.cshtml.g.cs
