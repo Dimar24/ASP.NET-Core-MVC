@@ -29,6 +29,7 @@ ASP.NET Core MVC/[Oo]bj/
 ASP.NET Core MVC/build
 
 # Visual Studio 2015 cache/options directory
+.vs
 ASP.NET Core MVC/.vs/
 ASP.NET Core MVC/.vs
 ASP.NET Core MVC/.vscode
