@@ -9,10 +9,10 @@ namespace ASP.NET_Core_MVC.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public int Year { get; set; }
-        public int Time { get; set; }
-        public int Age { get; set; }
+        public int ReleaseYear { get; set; }
+        public int DurationMin { get; set; }
+        public int AgeCategory { get; set; }
         public double Rating { get; set; }
-        public string Trailer { get; set; }
+        public string TrailerLink { get; set; }
     }
 }

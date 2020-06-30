@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ASP.NET_Core_MVC.ViewModels
+namespace ASP.NET_Core_MVC.Models
 {
     //[ModelMetadataType()]
     public class LoginModel
