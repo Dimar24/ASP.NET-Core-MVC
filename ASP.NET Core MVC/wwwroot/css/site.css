@@ -79,3 +79,14 @@ body {
     margin-left: 25%;
     margin-right: 25%;
 }
+
+.line-image {
+    margin-top: 0;
+}
+
+.btn-admin {
+    width: 70%;
+    margin-top: 5px;
+    margin-left: 15%;
+    margin-right: 15%;
+}

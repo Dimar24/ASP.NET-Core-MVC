@@ -16,38 +16,38 @@
     <div class="container row">
         @foreach (var item in Model)
         {
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card  shadow-sm">
-                    <div class="card-header">
-                        <h4>@Html.ActionLink(item.Title, "Info", "Film", new { globalId = item.Id })</h4>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                            <li>Год выхода: @Html.DisplayTextFor(modelItem => item.ReleaseYear) г.</li>
-                            <li>Время: @Html.DisplayTextFor(modelItem => item.DurationMin) (мин)</li>
-                            <li>Возростной рейтинг: @Html.DisplayTextFor(modelItem => item.AgeCategory)+</li>
-                            <li>Рейтинг: @Html.DisplayTextFor(modelItem => item.Rating)</li>
-                        </ul>
-                        @if (User.IsInRole("admin"))
-                        {
-                            <form action="@Url.RouteUrl(new { controller = "Film", action = "Edit", globalId = item.Id } )">
-                                <input type="submit" value="Редактировать" class="btn btn-success" />
-                            </form>
-                            <form action="@Url.RouteUrl(new { controller = "Film", action = "Delete", globalId = item.Id } )">
-                                <input type="submit" value="Удалить"  class="btn btn-danger" />
-                            </form>
-                            <form action="">
-                                <input type="submit" value="Скрыть" />
-                            </form>
-                            @*
-                                <button href="@Url.RouteUrl(new { controller = "Film", action = "Edit", globalId = item.Id } )">Редактировать</button>
-                                <button href="@Url.RouteUrl(new { controller = "Film", action = "Delete", globalId = item.Id } )">Удалить</button>
-                                <button>Скрыть</button>
-                            *@
-                        }
+            @if (!@item.Hiden || User.IsInRole("admin"))
+            {
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card  shadow-sm">
+                        <div class="card-header">
+                            <h4>@Html.ActionLink(item.Title, "Info", "Film", new { globalId = item.Id })</h4>
+                        </div>
+                        <img class="card-img-top" src="@item.PathImage" alt="Card image cap">
+                        <hr class="line-image">
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>Год выхода: @Html.DisplayTextFor(modelItem => item.ReleaseYear) г.</li>
+                                <li>Время: @Html.DisplayTextFor(modelItem => item.DurationMin) (мин)</li>
+                                <li>Возростной рейтинг: @Html.DisplayTextFor(modelItem => item.AgeCategory)+</li>
+                                <li>Рейтинг: @Html.DisplayTextFor(modelItem => item.Rating)</li>
+                            </ul>
+                            @if (User.IsInRole("admin"))
+                            {
+                                <form action="@Url.RouteUrl(new { controller = "Film", action = "Edit", globalId = item.Id } )">
+                                    <input type="submit" value="Редактировать" class="btn btn-success btn-admin" />
+                                </form>
+                                <form action="@Url.RouteUrl(new { controller = "Film", action = "Delete", globalId = item.Id } )">
+                                    <input type="submit" value="Удалить" class="btn btn-danger btn-admin" />
+                                </form>
+                                <form action="@Url.RouteUrl(new { controller = "Film", action = "Hiden", globalId = item.Id } )">
+                                    <input type="submit" value="@(!item.Hiden? "Скрыть" : "Показать")" class="btn btn@(!item.Hiden? "-primary" : "-secondary") -primary -info btn-admin" />
+                                </form>
+                            }
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
         }
     </div>
 
